@@ -1,0 +1,3476 @@
+{
+  "MatchData": {
+    "MapName": "de_inferno",
+    "TickRate": 0.015625,
+    "Events": [
+      {
+        "Type": "PlayerDeath",
+        "Tick": 2427,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "llawliet2205",
+          "Weapon": "knife_m9_bayonet",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 2430,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "sead3",
+          "Weapon": "knife_t",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 2443,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "TheRatMan_",
+          "Weapon": "knife",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 2535,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "knife_m9_bayonet",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 2686,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "andyle041197",
+          "Weapon": "knife_t",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 2701,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "shmeeny",
+          "Weapon": "knife_gypsy_jackknife",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 2701,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 2883,
+        "Data": {}
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 3811,
+        "Data": {}
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 3930,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 7166,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "pantspsd",
+          "Weapon": "glock",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 7608,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "shmeeny",
+          "Weapon": "usp_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 7871,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "andyle041197",
+          "Weapon": "usp_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 8177,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "arez00",
+          "Weapon": "glock",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 8319,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "24kHai",
+          "Weapon": "glock",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 9271,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "TheRatMan_",
+          "Weapon": "glock",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 9611,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "llawliet2205",
+          "Weapon": "usp_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 10468,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "glock",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 10468,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 10916,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 14223,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "sead3",
+          "Weapon": "mp9",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 14254,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "24kHai",
+          "Weapon": "galilar",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 14401,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "motomoto44",
+          "Weapon": "galilar",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 14406,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "shmeeny",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 14566,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "TheRatMan_",
+          "Weapon": "galilar",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 14674,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "pantspsd",
+          "Weapon": "galilar",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 15173,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "arez00",
+          "Weapon": "galilar",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 15173,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 15621,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 17739,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "pantspsd",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 18341,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 18584,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 19398,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "TheRatMan_",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 20068,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 20787,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "arez00",
+          "Weapon": "galilar",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 20787,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 21235,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 23248,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 23911,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "shmeeny",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 24085,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 24576,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 24652,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 25186,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "arez00",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 26602,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "andyle041197",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 28072,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "TheRatMan_",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 31738,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "24kHai",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 31738,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 32186,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 35255,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "pantspsd",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 35390,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "llawliet2205",
+          "Weapon": "famas",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 35525,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 36135,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "shmeeny",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 36432,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 36613,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 36845,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "andyle041197",
+          "Weapon": "famas",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 37127,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 37575,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 40131,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "awp",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 40726,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "shmeeny",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 40963,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "llawliet2205",
+          "Weapon": "galilar",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 41397,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "andyle041197",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 42362,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 44410,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "TheRatMan_",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 44772,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 45517,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "sead3",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 45517,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 45965,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 48099,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "shmeeny",
+          "Weapon": "hegrenade",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 48099,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "llawliet2205",
+          "Weapon": "hegrenade",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 48112,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "galilar",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 48445,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "andyle041197",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 48905,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "sead3",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 49034,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "motomoto44",
+          "Weapon": "mac10",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 49579,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "arez00",
+          "Weapon": "mac10",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 50458,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 51070,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 51518,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 53932,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 54762,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 54778,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "shmeeny",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 55056,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "pantspsd",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 56149,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "motomoto44",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 56772,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "TheRatMan_",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 58172,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "arez00",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 58172,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 58620,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 60705,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 60966,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "motomoto44",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 61172,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 61305,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "shmeeny",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 61656,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "TheRatMan_",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 65583,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 66031,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 68471,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "shmeeny",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 68863,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "TheRatMan_",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 69044,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "sead3",
+          "Weapon": "mp9",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 70128,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "llawliet2205",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 70234,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 70840,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "arez00",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 71559,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 71801,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "andyle041197",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 71801,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 72249,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 75061,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "pantspsd",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 75380,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "arez00",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 76359,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "sead3",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 76466,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "TheRatMan_",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 76876,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "andyle041197",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 77021,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 77279,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "motomoto44",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 77279,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 77727,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 81607,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "deagle",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 82275,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "llawliet2205",
+          "Weapon": "mp9",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 82458,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "TheRatMan_",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 84244,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "mp9",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 84258,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "shmeeny",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 84747,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 86367,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 86912,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 89911,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "sead3",
+          "Weapon": "tec9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 90074,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "pantspsd",
+          "Weapon": "usp_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 90107,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "shmeeny",
+          "Weapon": "tec9",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 90188,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "arez00",
+          "Weapon": "usp_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 90771,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "motomoto44",
+          "Weapon": "tec9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 91001,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "24kHai",
+          "Weapon": "usp_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 91343,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "andyle041197",
+          "Weapon": "glock",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 91384,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "TheRatMan_",
+          "Weapon": "tec9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 92073,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 92521,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 94780,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "llawliet2205",
+          "Weapon": "mac10",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 94848,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "TheRatMan_",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 94855,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "motomoto44",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 94960,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "andyle041197",
+          "Weapon": "mac10",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 95414,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "shmeeny",
+          "Weapon": "mac10",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 98393,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "pantspsd",
+          "Weapon": "tec9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 98516,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "sead3",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 98939,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 98939,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 99387,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 101837,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "shmeeny",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 102054,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "motomoto44",
+          "Weapon": "mp5sd",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 102225,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "andyle041197",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 102348,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "pantspsd",
+          "Weapon": "mag7",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 103620,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 104189,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "TheRatMan_",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 104487,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 105395,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "24kHai",
+          "Weapon": "mp5sd",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 105851,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "llawliet2205",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 105851,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 106299,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 109678,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "andyle041197",
+          "Weapon": "mac10",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 109706,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "24kHai",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 109830,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "shmeeny",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 110238,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "motomoto44",
+          "Weapon": "usp_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 110515,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "sead3",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 110618,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 110736,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "llawliet2205",
+          "Weapon": "mac10",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 110736,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 111184,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 115418,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "arez00",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 115581,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 115686,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 116036,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "pantspsd",
+          "Weapon": "usp_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 116155,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "andyle041197",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 116866,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "llawliet2205",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 117291,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "24kHai",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 117334,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "TheRatMan_",
+          "Weapon": "xm1014",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 117334,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 117782,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 121304,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "xm1014",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 122629,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "arez00",
+          "Weapon": "xm1014",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 122792,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "motomoto44",
+          "Weapon": "m4a1",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 122914,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "shmeeny",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 123200,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 123532,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 124077,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "llawliet2205",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 124216,
+        "Data": {
+          "KillerName": "24kHai",
+          "VictimName": "andyle041197",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 124216,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 124664,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 127809,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "taser",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 128266,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "pantspsd",
+          "Weapon": "awp",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 129653,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "shmeeny",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 129918,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "24kHai",
+          "Weapon": "mp9",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 130203,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "TheRatMan_",
+          "Weapon": "xm1014",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 130634,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "arez00",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 130634,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 131082,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 133700,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "motomoto44",
+          "Weapon": "m4a1",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 133738,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "sead3",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 134554,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "24kHai",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 134645,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "TheRatMan_",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 135051,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 135687,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "llawliet2205",
+          "Weapon": "deagle",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 136543,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "arez00",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 136543,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 136991,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 139485,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "pantspsd",
+          "Weapon": "m4a1_silencer",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 140202,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "24kHai",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 140570,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "llawliet2205",
+          "Weapon": "ak47",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 140745,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "andyle041197",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 141845,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "arez00",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 142455,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "TheRatMan_",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 142839,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "motomoto44",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 142839,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 143287,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 146846,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "sead3",
+          "Weapon": "mac10",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 146867,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "motomoto44",
+          "Weapon": "awp",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 146874,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "andyle041197",
+          "Weapon": "mac10",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 147904,
+        "Data": {
+          "KillerName": "pantspsd",
+          "VictimName": "shmeeny",
+          "Weapon": "mac10",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 148049,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "galilar",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 148379,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "pantspsd",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 148572,
+        "Data": {
+          "KillerName": "TheRatMan_",
+          "VictimName": "llawliet2205",
+          "Weapon": "galilar",
+          "Headshot": true
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 148572,
+        "Data": {
+          "Winner": 2
+        }
+      },
+      {
+        "Type": "RoundStart",
+        "Tick": 149020,
+        "Data": {}
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 151658,
+        "Data": {
+          "KillerName": "andyle041197",
+          "VictimName": "TheRatMan_",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 152379,
+        "Data": {
+          "KillerName": "motomoto44",
+          "VictimName": "andyle041197",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 152418,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "pantspsd",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 152621,
+        "Data": {
+          "KillerName": "llawliet2205",
+          "VictimName": "motomoto44",
+          "Weapon": "mp9",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 152708,
+        "Data": {
+          "KillerName": "arez00",
+          "VictimName": "llawliet2205",
+          "Weapon": "ak47",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 152897,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "arez00",
+          "Weapon": "m4a1",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 153069,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "24kHai",
+          "Weapon": "m4a1_silencer",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "RoundEnd",
+        "Tick": 153069,
+        "Data": {
+          "Winner": 3
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 153444,
+        "Data": {
+          "KillerName": "BPSSR-1SHOT",
+          "VictimName": "BPSSR-1SHOT",
+          "Weapon": "world",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 153906,
+        "Data": {
+          "KillerName": "sead3",
+          "VictimName": "sead3",
+          "Weapon": "world",
+          "Headshot": false
+        }
+      },
+      {
+        "Type": "PlayerDeath",
+        "Tick": 154074,
+        "Data": {
+          "KillerName": "shmeeny",
+          "VictimName": "shmeeny",
+          "Weapon": "world",
+          "Headshot": false
+        }
+      }
+    ],
+    "PlayerStats": {
+      "8": {
+        "Name": "arez00",
+        "Kills": 17,
+        "Deaths": 15,
+        "Assists": 0,
+        "HeadshotPercentage": 0.15,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife_t",
+            "Kills": 0,
+            "TotalShots": 146,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 116,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife",
+            "Kills": 0,
+            "TotalShots": 270,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 17,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_incgrenade",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 11,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "usp_silencer",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_p250",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 14,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 13,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_famas",
+            "Kills": 0,
+            "TotalShots": 21,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "famas",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 12,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_awp",
+            "Kills": 0,
+            "TotalShots": 7,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "awp",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_elite",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 73,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 6,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_deagle",
+            "Kills": 0,
+            "TotalShots": 20,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_tec9",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 6,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "deagle",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 9,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 13,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mac10",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "12": {
+        "Name": "andyle041197",
+        "Kills": 25,
+        "Deaths": 17,
+        "Assists": 0,
+        "HeadshotPercentage": 0.23,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife",
+            "Kills": 0,
+            "TotalShots": 27,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "knife",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1",
+            "Kills": 0,
+            "TotalShots": 26,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife_t",
+            "Kills": 0,
+            "TotalShots": 37,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_glock",
+            "Kills": 0,
+            "TotalShots": 22,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 16,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ssg08",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 11,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 141,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_awp",
+            "Kills": 0,
+            "TotalShots": 14,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "awp",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 15,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "galilar",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 80,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 7,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_incgrenade",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "usp_silencer",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 8,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp5sd",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp5sd",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ump45",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_bizon",
+            "Kills": 0,
+            "TotalShots": 35,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_xm1014",
+            "Kills": 0,
+            "TotalShots": 11,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "xm1014",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "11": {
+        "Name": "24kHai",
+        "Kills": 12,
+        "Deaths": 18,
+        "Assists": 0,
+        "HeadshotPercentage": 0.1,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife_m9_bayonet",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "knife_m9_bayonet",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hkp2000",
+            "Kills": 0,
+            "TotalShots": 9,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 20,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 79,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp9",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 22,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 12,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 102,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 5,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 64,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_tec9",
+            "Kills": 0,
+            "TotalShots": 31,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "tec9",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 38,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mac10",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "5": {
+        "Name": "llawliet2205",
+        "Kills": 17,
+        "Deaths": 16,
+        "Assists": 0,
+        "HeadshotPercentage": 0.14,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_glock",
+            "Kills": 0,
+            "TotalShots": 22,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "glock",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 14,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 25,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "galilar",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 9,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 97,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 6,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 74,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife_t",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 63,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp5sd",
+            "Kills": 0,
+            "TotalShots": 35,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp5sd",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "usp_silencer",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_incgrenade",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 85,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp9",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "9": {
+        "Name": "sead3",
+        "Kills": 20,
+        "Deaths": 18,
+        "Assists": 0,
+        "HeadshotPercentage": 0.17,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife_karambit",
+            "Kills": 0,
+            "TotalShots": 152,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_glock",
+            "Kills": 0,
+            "TotalShots": 58,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "glock",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 8,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 13,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 25,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 216,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 12,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 9,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mag7",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mag7",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 48,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp9",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_incgrenade",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_taser",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "taser",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1",
+            "Kills": 0,
+            "TotalShots": 36,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "world",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "7": {
+        "Name": "BPSSR-1SHOT",
+        "Kills": 23,
+        "Deaths": 15,
+        "Assists": 0,
+        "HeadshotPercentage": 0.2,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife_karambit",
+            "Kills": 0,
+            "TotalShots": 45,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_glock",
+            "Kills": 0,
+            "TotalShots": 17,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "glock",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 41,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "galilar",
+            "Kills": 4,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 6,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 8,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 45,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 12,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 37,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mac10",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_awp",
+            "Kills": 0,
+            "TotalShots": 7,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 5,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "awp",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 7,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "usp_silencer",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_tec9",
+            "Kills": 0,
+            "TotalShots": 19,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "tec9",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 94,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp9",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_decoy",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "world",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "13": {
+        "Name": "pantspsd",
+        "Kills": 17,
+        "Deaths": 20,
+        "Assists": 0,
+        "HeadshotPercentage": 0.11,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife_t",
+            "Kills": 0,
+            "TotalShots": 7,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "knife_t",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 12,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 89,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp9",
+            "Kills": 4,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_incgrenade",
+            "Kills": 0,
+            "TotalShots": 7,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 15,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 14,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "galilar",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 33,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "hegrenade",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_decoy",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 11,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_tec9",
+            "Kills": 0,
+            "TotalShots": 14,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "tec9",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 156,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mac10",
+            "Kills": 4,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          }
+        ]
+      },
+      "4": {
+        "Name": "TheRatMan_",
+        "Kills": 23,
+        "Deaths": 19,
+        "Assists": 0,
+        "HeadshotPercentage": 0.23,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_knife_t",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_fiveseven",
+            "Kills": 0,
+            "TotalShots": 12,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_deagle",
+            "Kills": 0,
+            "TotalShots": 6,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 37,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 5,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_incgrenade",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_awp",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "awp",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "deagle",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_glock",
+            "Kills": 0,
+            "TotalShots": 12,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "glock",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 26,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mac10",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 105,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 12,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 30,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "galilar",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      },
+      "6": {
+        "Name": "motomoto44",
+        "Kills": 13,
+        "Deaths": 20,
+        "Assists": 0,
+        "HeadshotPercentage": 0.12,
+        "WeaponUsage": [
+          {
+            "WeaponName": "knife_gypsy_jackknife",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_glock",
+            "Kills": 0,
+            "TotalShots": 27,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 28,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "usp_silencer",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hkp2000",
+            "Kills": 0,
+            "TotalShots": 11,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_fiveseven",
+            "Kills": 0,
+            "TotalShots": 8,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 99,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "m4a1_silencer",
+            "Kills": 5,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mp9",
+            "Kills": 0,
+            "TotalShots": 25,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 8,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 5,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mp9",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife_gypsy_jackknife",
+            "Kills": 0,
+            "TotalShots": 3,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 52,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 2,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_mac10",
+            "Kills": 0,
+            "TotalShots": 13,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "mac10",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          }
+        ]
+      },
+      "10": {
+        "Name": "shmeeny",
+        "Kills": 10,
+        "Deaths": 19,
+        "Assists": 0,
+        "HeadshotPercentage": 0.07,
+        "WeaponUsage": [
+          {
+            "WeaponName": "weapon_smokegrenade",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_galilar",
+            "Kills": 0,
+            "TotalShots": 22,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_ak47",
+            "Kills": 0,
+            "TotalShots": 64,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "ak47",
+            "Kills": 4,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_flashbang",
+            "Kills": 0,
+            "TotalShots": 4,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_molotov",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_hegrenade",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife_t",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_usp_silencer",
+            "Kills": 0,
+            "TotalShots": 9,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "usp_silencer",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_m4a1_silencer",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_xm1014",
+            "Kills": 0,
+            "TotalShots": 1,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "xm1014",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_awp",
+            "Kills": 0,
+            "TotalShots": 10,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "awp",
+            "Kills": 3,
+            "TotalShots": 0,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "weapon_knife",
+            "Kills": 0,
+            "TotalShots": 2,
+            "Hits": 0
+          },
+          {
+            "WeaponName": "world",
+            "Kills": 1,
+            "TotalShots": 0,
+            "Hits": 0
+          }
+        ]
+      }
+    }
+  },
+  "PlayerName": "shmeeny",
+  "PerformanceRating": 12.698219,
+  "DetailedMetrics": {
+    "KDR": 0.5263158,
+    "KillsPerRound": 0.4,
+    "SurvivalRate": 0.24000001,
+    "HeadshotPercentage": 0.0007,
+    "AverageAccuracy": 0,
+    "TradingEffectiveness": 0.10526316
+  },
+  "Timestamp": "2024-12-30T22:48:03.7746444Z"
+}
