@@ -4,13 +4,13 @@ namespace CS2AICoach.Services
 {
     public class PerformanceRatingService
     {
+
         public float CalculatePerformanceScore(MatchData matchData, PlayerStats playerStats)
         {
-            // Calculate rounds played
             int roundCount = matchData.Events.Count(e => e.Type == "RoundStart");
-            roundCount = Math.Max(1, roundCount); // Prevent division by zero
+            roundCount = Math.Max(1, roundCount);
 
-            // Core performance metrics
+            // Core performance metrics with adjusted scaling
             float kdr = playerStats.Deaths > 0 ? (float)playerStats.Kills / playerStats.Deaths : playerStats.Kills;
             float kpr = (float)playerStats.Kills / roundCount;
             float survivalRate = 1.0f - ((float)playerStats.Deaths / roundCount);
@@ -18,17 +18,15 @@ namespace CS2AICoach.Services
             // Accuracy metrics
             float hsPercentage = (float)playerStats.HeadshotPercentage / 100;
             float averageAccuracy = CalculateAverageAccuracy(playerStats);
-
-            // Calculate trading effectiveness (basic implementation)
             float tradingEffectiveness = CalculateTradingEffectiveness(matchData, playerStats);
 
-            // Weighted scoring components (total = 100)
-            float kdrScore = ScaleValue(kdr, 0, 3) * 20;       // Max 20 points
-            float kprScore = ScaleValue(kpr, 0, 2) * 20;       // Max 20 points
-            float survivalScore = survivalRate * 15;           // Max 15 points
-            float hsScore = hsPercentage * 15;                 // Max 15 points
-            float accuracyScore = averageAccuracy * 15;        // Max 15 points
-            float tradingScore = tradingEffectiveness * 15;    // Max 15 points
+            // Adjusted scaling factors
+            float kdrScore = ScaleValue(kdr, 0, 2) * 25;        // Max 25 points, scaled to 2.0 KDR
+            float kprScore = ScaleValue(kpr, 0, 1.2f) * 20;     // Max 20 points, scaled to 1.2 KPR
+            float survivalScore = survivalRate * 15;            // Max 15 points
+            float hsScore = ScaleValue(hsPercentage, 0.2f, 0.7f) * 15;  // Max 15 points, scaled between 20-70%
+            float accuracyScore = ScaleValue(averageAccuracy, 0.1f, 0.4f) * 15;  // Max 15 points, scaled between 10-40%
+            float tradingScore = ScaleValue(tradingEffectiveness, 0.2f, 0.6f) * 10;  // Max 10 points, scaled between 20-60%
 
             // Combine scores and ensure it's between 0 and 100
             float totalScore = kdrScore + kprScore + survivalScore + hsScore + accuracyScore + tradingScore;
