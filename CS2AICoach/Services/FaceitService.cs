@@ -17,10 +17,7 @@ namespace CS2AICoach.Services
 
         public async Task<string?> GetFaceitPlayerIdBySteamId(string steamId)
         {
-            // Convert SteamID64 to format FACEIT expects
-            var steam32 = (ulong.Parse(steamId) - 76561197960265728).ToString();
-
-            var response = await _httpClient.GetAsync($"{BaseUrl}/players?game=cs2&game_player_id={steam32}");
+            var response = await _httpClient.GetAsync($"{BaseUrl}/players?game=cs2&game_player_id={steamId}");
             if (!response.IsSuccessStatusCode) return null;
 
             var content = await response.Content.ReadAsStringAsync();
@@ -53,7 +50,7 @@ namespace CS2AICoach.Services
 
             try
             {
-                var demoUrls = doc.RootElement.GetProperty("demo_urls").EnumerateArray();
+                var demoUrls = doc.RootElement.GetProperty("demo_url").EnumerateArray();
                 return demoUrls.FirstOrDefault().GetString();
             }
             catch
@@ -73,6 +70,7 @@ namespace CS2AICoach.Services
             foreach (var matchId in matchIds)
             {
                 var demoUrl = await GetMatchDemoUrl(matchId);
+                Console.WriteLine(demoUrl);
                 if (string.IsNullOrEmpty(demoUrl)) continue;
 
                 var fileName = Path.Combine(downloadPath, $"{matchId}.dem.gz");
