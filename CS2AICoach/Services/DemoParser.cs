@@ -1,4 +1,5 @@
 using System.IO.Compression;
+using ICSharpCode.SharpZipLib.BZip2;
 using CS2AICoach.Models;
 using DemoFile;
 using DemoFile.Game.Cs;
@@ -37,6 +38,13 @@ namespace CS2AICoach.Services
                     using var gzipStream = new GZipStream(fileStream, CompressionMode.Decompress);
                     using var memoryStream = new MemoryStream();
                     await gzipStream.CopyToAsync(memoryStream);
+                    demoBytes = memoryStream.ToArray();
+                }
+                else if (_demoFilePath.EndsWith(".bz2", StringComparison.OrdinalIgnoreCase))
+                {
+                    using var bzip2Stream = new BZip2InputStream(fileStream);
+                    using var memoryStream = new MemoryStream();
+                    await bzip2Stream.CopyToAsync(memoryStream);
                     demoBytes = memoryStream.ToArray();
                 }
                 else

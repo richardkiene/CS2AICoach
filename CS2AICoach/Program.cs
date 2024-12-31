@@ -82,8 +82,9 @@ class Program
 
         var searchOption = recursive ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly;
         return Directory.GetFiles(path, "*.*", searchOption)
-            .Where(f => f.EndsWith(".dem", StringComparison.OrdinalIgnoreCase) ||
-                       f.EndsWith(".dem.gz", StringComparison.OrdinalIgnoreCase));
+                .Where(f => f.EndsWith(".dem", StringComparison.OrdinalIgnoreCase) ||
+                f.EndsWith(".dem.gz", StringComparison.OrdinalIgnoreCase) ||
+                f.EndsWith(".dem.bz2", StringComparison.OrdinalIgnoreCase));
     }
 
     private static void PrintAvailablePlayers(MatchData matchData)
