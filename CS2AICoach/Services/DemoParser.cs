@@ -71,11 +71,16 @@ namespace CS2AICoach.Services
 
             if (victim != null && attacker != null)
             {
+                string victimSteamId = victim.SteamID.ToString();
+                string attackerSteamId = attacker.SteamID.ToString();
+
                 UpdatePlayerStats(
                     e.AttackerIndex.Value,
                     e.PlayerIndex.Value,
                     attacker.PlayerName ?? "Unknown",
                     victim.PlayerName ?? "Unknown",
+                    attackerSteamId,
+                    victimSteamId,
                     e.Weapon ?? "Unknown",
                     e.Headshot);
 
@@ -84,26 +89,36 @@ namespace CS2AICoach.Services
                     Type = "PlayerDeath",
                     Tick = _demo.CurrentDemoTick.Value,
                     Data = new Dictionary<string, object>
-            {
-                { "KillerName", attacker.PlayerName ?? "Unknown" },
-                { "VictimName", victim.PlayerName ?? "Unknown" },
-                { "Weapon", e.Weapon ?? "Unknown" },
-                { "Headshot", e.Headshot }
-            }
+                    {
+                        { "KillerName", attacker.PlayerName ?? "Unknown" },
+                        { "KillerSteamId", attackerSteamId },
+                        { "VictimName", victim.PlayerName ?? "Unknown" },
+                        { "VictimSteamId", victimSteamId },
+                        { "Weapon", e.Weapon ?? "Unknown" },
+                        { "Headshot", e.Headshot }
+                    }
                 });
             }
         }
 
-        private void UpdatePlayerStats(long killerId, long victimId, string killerName, string victimName, string weapon, bool headshot)
+        private void UpdatePlayerStats(long killerId, long victimId, string killerName, string victimName, string killerSteamId, string victimSteamId, string weapon, bool headshot)
         {
             if (!_playerStats.ContainsKey(killerId))
             {
-                _playerStats[killerId] = new PlayerStats { Name = killerName };
+                _playerStats[killerId] = new PlayerStats
+                {
+                    Name = killerName,
+                    SteamId = killerSteamId
+                };
             }
 
             if (!_playerStats.ContainsKey(victimId))
             {
-                _playerStats[victimId] = new PlayerStats { Name = victimName };
+                _playerStats[victimId] = new PlayerStats
+                {
+                    Name = victimName,
+                    SteamId = victimSteamId
+                };
             }
 
             _playerStats[killerId].Kills++;
@@ -136,7 +151,11 @@ namespace CS2AICoach.Services
 
             if (!_playerStats.ContainsKey(e.PlayerIndex.Value))
             {
-                _playerStats[e.PlayerIndex.Value] = new PlayerStats { Name = shooter.PlayerName ?? "Unknown" };
+                _playerStats[e.PlayerIndex.Value] = new PlayerStats
+                {
+                    Name = shooter.PlayerName ?? "Unknown",
+                    SteamId = shooter.SteamID.ToString()
+                };
             }
 
             var weaponStats = _playerStats[e.PlayerIndex.Value].WeaponUsage
@@ -150,6 +169,7 @@ namespace CS2AICoach.Services
 
             weaponStats.TotalShots++;
         }
+
         private void OnRoundStart(Source1RoundStartEvent e)
         {
             _matchData.Events.Add(new GameEvent
@@ -167,9 +187,9 @@ namespace CS2AICoach.Services
                 Type = "RoundEnd",
                 Tick = _demo.CurrentDemoTick.Value,
                 Data = new Dictionary<string, object>
-        {
-            { "Winner", e.Winner }
-        }
+                {
+                    { "Winner", e.Winner }
+                }
             });
         }
     }

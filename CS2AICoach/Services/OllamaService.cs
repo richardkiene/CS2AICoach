@@ -39,6 +39,11 @@ namespace CS2AICoach.Services
             var mlData = _mlService.ConvertToMLData(matchData, mainPlayer);
             var analysis = _mlService.AnalyzePerformance(mlData);
 
+            if (analysis?.Metrics == null || analysis.Insights == null)
+            {
+                return "Error: Unable to generate performance analysis";
+            }
+
             var prompt = GenerateEnhancedAnalysisPrompt(matchData, analysis, mainPlayer);
             var response = await GetOllamaResponse(prompt);
             return response;
@@ -57,11 +62,15 @@ namespace CS2AICoach.Services
 
         private string GenerateEnhancedAnalysisPrompt(MatchData matchData, PerformanceAnalysis mlAnalysis, PlayerStats mainPlayer)
         {
+            if (mlAnalysis.Metrics == null || mlAnalysis.Insights == null)
+            {
+                throw new ArgumentException("Analysis metrics or insights are null");
+            }
+
             var sb = new StringBuilder();
-            sb.AppendLine($"You are an expert CS2 coach analyzing a match for player: {_playerName}");
+            sb.AppendLine($"You are an expert CS2 coach analyzing a match for player: {mainPlayer.Name}");
             sb.AppendLine($"Map: {matchData.MapName}");
 
-            // Add ML analysis
             sb.AppendLine("\nML Model Analysis:");
             sb.AppendLine($"Overall Performance Score: {mlAnalysis.PredictedScore:F1}/100");
 

@@ -9,6 +9,7 @@ An AI-powered Counter-Strike 2 coaching tool that analyzes demo files to provide
 - **ML-Powered Insights**: Uses machine learning to evaluate player performance and identify areas for improvement
 - **AI Coaching**: Leverages Ollama's LLM capabilities to provide detailed, context-aware coaching advice
 - **Training Data Collection**: Build a customized dataset for more accurate performance predictions
+- **Steam ID Support**: Identify players by Steam ID for consistent tracking across different in-game names
 
 ## Prerequisites 📋
 
@@ -38,26 +39,36 @@ dotnet build
 
 ### Analyze a Demo
 
-Analyze a single demo file with AI coaching feedback:
+By player name:
 ```bash
 dotnet run analyze path/to/demo.dem.gz "PlayerName"
 ```
 
-Analyze multiple demos in a directory:
+By Steam ID:
 ```bash
-dotnet run analyze path/to/demos_folder "PlayerName"
+dotnet run analyze path/to/demo.dem.gz "STEAM_1:1:12345" --use-steamid
 ```
 
-Include subdirectories with recursive search:
+Analyze multiple demos in a directory:
 ```bash
 dotnet run analyze path/to/demos_folder "PlayerName" --recursive
 ```
 
 ### Rate Matches for Training
 
-Rate matches to build training data for the ML model:
+Rate a single match:
 ```bash
 dotnet run rate path/to/demo.dem.gz "PlayerName"
+```
+
+Rate by Steam ID:
+```bash
+dotnet run rate path/to/demo.dem.gz "STEAM_1:1:12345" --use-steamid
+```
+
+Bulk rate multiple demos:
+```bash
+dotnet run rate path/to/demos_folder "PlayerName" --recursive
 ```
 
 ### Train the ML Model
@@ -78,7 +89,7 @@ dotnet run list
 
 ### Demo Parsing
 The application uses the DemoFile library to parse CS2 demo files, extracting detailed match statistics including:
-- Player performance metrics
+- Player performance metrics (linked to both name and Steam ID)
 - Weapon usage and accuracy
 - Kill/death events
 - Round information
@@ -117,7 +128,7 @@ The Ollama integration provides detailed coaching advice by:
   - `TrainingDataService.cs`: Training data management
 - `Models/`
   - `MatchData.cs`: Match statistics and events
-  - `PlayerStats.cs`: Player performance metrics
+  - `PlayerStats.cs`: Player performance metrics with Steam ID support
   - `WeaponStats.cs`: Weapon usage statistics
 
 ## Contributing 🤝
@@ -144,6 +155,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
 
 ## Acknowledgments 👏
 
