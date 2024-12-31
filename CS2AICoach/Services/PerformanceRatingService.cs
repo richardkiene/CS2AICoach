@@ -37,11 +37,9 @@ namespace CS2AICoach.Services
 
         private float CalculateAverageAccuracy(PlayerStats playerStats)
         {
-            var weaponAccuracies = playerStats.WeaponUsage
-                .Where(w => w.TotalShots > 0)
-                .Select(w => (float)w.Hits / w.TotalShots);
-
-            return weaponAccuracies.Any() ? weaponAccuracies.Average() : 0;
+            var totalHits = playerStats.WeaponUsage.Sum(w => w.Hits);
+            var totalShots = playerStats.WeaponUsage.Sum(w => w.TotalShots);
+            return totalShots > 0 ? (float)totalHits / totalShots : 0;
         }
 
         private float CalculateTradingEffectiveness(MatchData matchData, PlayerStats playerStats)

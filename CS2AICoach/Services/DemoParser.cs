@@ -25,6 +25,7 @@ namespace CS2AICoach.Services
             _demo.PacketEvents.SvcServerInfo += OnServerInfo;
             _demo.Source1GameEvents.PlayerDeath += OnPlayerDeath;
             _demo.Source1GameEvents.WeaponFire += OnWeaponFire;
+            _demo.Source1GameEvents.PlayerHurt += OnPlayerHurt;
             _demo.Source1GameEvents.RoundStart += OnRoundStart;
             _demo.Source1GameEvents.RoundEnd += OnRoundEnd;
 
@@ -124,11 +125,18 @@ namespace CS2AICoach.Services
             _playerStats[killerId].Kills++;
             _playerStats[victimId].Deaths++;
 
+            // Track headshots for percentage calculation
+            if (!_playerStats[killerId].Data.ContainsKey("headshots"))
+            {
+                _playerStats[killerId].Data["headshots"] = 0;
+            }
             if (headshot)
             {
-                var totalKills = _playerStats[killerId].Kills;
-                _playerStats[killerId].HeadshotPercentage = (double)totalKills / 100;
+                _playerStats[killerId].Data["headshots"] = (int)_playerStats[killerId].Data["headshots"] + 1;
             }
+            // Calculate percentage based on headshot kills vs total kills
+            _playerStats[killerId].HeadshotPercentage = _playerStats[killerId].Kills > 0 ?
+                (_playerStats[killerId].Data["headshots"] as int? ?? 0) * 100.0 / _playerStats[killerId].Kills : 0;
 
             var weaponStats = _playerStats[killerId].WeaponUsage
                 .FirstOrDefault(w => w.WeaponName == weapon);
@@ -140,6 +148,24 @@ namespace CS2AICoach.Services
             }
 
             weaponStats.Kills++;
+        }
+
+        private void OnPlayerHurt(Source1PlayerHurtEvent e)
+        {
+            if (e.PlayerIndex.Value == default || e.AttackerIndex.Value == default) return;
+            if (!_playerStats.ContainsKey(e.AttackerIndex.Value)) return;
+
+            var weapon = e.Weapon ?? "Unknown";
+            var weaponStats = _playerStats[e.AttackerIndex.Value].WeaponUsage
+                .FirstOrDefault(w => w.WeaponName == weapon);
+
+            if (weaponStats == null)
+            {
+                weaponStats = new WeaponStats { WeaponName = weapon };
+                _playerStats[e.AttackerIndex.Value].WeaponUsage.Add(weaponStats);
+            }
+
+            weaponStats.RegisterHit();
         }
 
         private void OnWeaponFire(Source1WeaponFireEvent e)
