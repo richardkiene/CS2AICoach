@@ -5,6 +5,7 @@ An AI-powered Counter-Strike 2 coaching tool that analyzes demo files to provide
 ## Features 🚀
 
 - **Demo Analysis**: Parse and analyze CS2 demo files (.dem, .dem.gz)
+- **FACEIT Integration**: Automatically download pro player demos using FACEIT API
 - **Performance Metrics**: Track detailed statistics including K/D/A, headshot percentage, weapon accuracy, and trading effectiveness
 - **ML-Powered Insights**: Uses machine learning to evaluate player performance and identify areas for improvement
 - **AI Coaching**: Leverages Ollama's LLM capabilities to provide detailed, context-aware coaching advice
@@ -16,6 +17,7 @@ An AI-powered Counter-Strike 2 coaching tool that analyzes demo files to provide
 - [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0) or newer
 - [Ollama](https://ollama.ai/) running locally (default: http://localhost:11434)
 - CS2 demo files (.dem or .dem.gz format)
+- FACEIT API key (for downloading pro demos)
 
 ## Installation 🛠️
 
@@ -37,6 +39,26 @@ dotnet build
 
 ## Usage 💡
 
+### Download FACEIT Demos
+
+Download demos for a specific player by Steam ID:
+```bash
+# Download 5 latest demos (default)
+dotnet run download 76561198386265483
+
+# Download specific number of demos
+dotnet run download 76561198386265483 --limit=10
+```
+
+Note: Requires a FACEIT API key set as environment variable:
+```bash
+# Linux/macOS
+export FACEIT_API_KEY=your-api-key
+
+# Windows PowerShell
+$env:FACEIT_API_KEY="your-api-key"
+```
+
 ### Analyze a Demo
 
 By player name:
@@ -44,9 +66,9 @@ By player name:
 dotnet run analyze path/to/demo.dem.gz "PlayerName"
 ```
 
-By Steam ID:
+By Steam ID (64-bit format):
 ```bash
-dotnet run analyze path/to/demo.dem.gz "STEAM_1:1:12345" --use-steamid
+dotnet run analyze path/to/demo.dem.gz "76561197960265728" --use-steamid
 ```
 
 Analyze multiple demos in a directory:
@@ -61,9 +83,9 @@ Rate a single match:
 dotnet run rate path/to/demo.dem.gz "PlayerName"
 ```
 
-Rate by Steam ID:
+Rate by Steam ID (64-bit format):
 ```bash
-dotnet run rate path/to/demo.dem.gz "STEAM_1:1:12345" --use-steamid
+dotnet run rate path/to/demo.dem.gz "76561197960265728" --use-steamid
 ```
 
 Bulk rate multiple demos:
@@ -122,6 +144,7 @@ The Ollama integration provides detailed coaching advice by:
 - `Program.cs`: Main application entry point and command handling
 - `Services/`
   - `DemoParser.cs`: CS2 demo file parsing
+  - `FaceitService.cs`: FACEIT API integration for demo downloads
   - `MLService.cs`: Machine learning model training and predictions
   - `OllamaService.cs`: LLM integration for coaching advice
   - `PerformanceRatingService.cs`: Match performance evaluation
@@ -160,5 +183,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ## Acknowledgments 👏
 
 - [DemoFile](https://github.com/StatsHelix/demoinfo) library for CS2 demo parsing
+- [FACEIT API](https://developers.faceit.com/) for accessing pro player demos
 - [Ollama](https://ollama.ai/) for local LLM capabilities
 - [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) for machine learning functionality

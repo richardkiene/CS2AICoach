@@ -38,6 +38,15 @@ class Program
                 await ListTrainingData();
                 break;
 
+            case "download":
+                if (nonOptions.Length < 1)
+                {
+                    Console.WriteLine("Usage: download <steam-id> [--limit <number>]");
+                    return;
+                }
+                await DownloadDemos(nonOptions[0], GetLimitOption(options));
+                break;
+
             default:
                 Console.WriteLine($"Unknown command: {command}");
                 PrintHelp();
@@ -281,6 +290,44 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Error listing training data: {ex.Message}");
+        }
+    }
+
+    private static int GetLimitOption(string[] options)
+    {
+        var limitOption = options.FirstOrDefault(o => o.StartsWith("--limit="));
+        if (limitOption == null) return 5;
+
+        var limitStr = limitOption.Split('=')[1];
+        return int.TryParse(limitStr, out int limit) ? limit : 5;
+    }
+
+    private static async Task DownloadDemos(string steamId, int limit)
+    {
+        var apiKey = Environment.GetEnvironmentVariable("FACEIT_API_KEY");
+        if (string.IsNullOrEmpty(apiKey))
+        {
+            Console.WriteLine("Please set FACEIT_API_KEY environment variable");
+            return;
+        }
+
+        var downloadPath = Path.Combine(Directory.GetCurrentDirectory(), "downloads");
+        Directory.CreateDirectory(downloadPath);
+
+        Console.WriteLine($"Downloading up to {limit} demos for Steam ID: {steamId}");
+        var faceitService = new FaceitService(apiKey);
+
+        var files = await faceitService.DownloadPlayerDemos(steamId, downloadPath, limit);
+        if (files.Count == 0)
+        {
+            Console.WriteLine("No demos found or player not found on FACEIT");
+            return;
+        }
+
+        Console.WriteLine($"\nDownloaded {files.Count} demos to {downloadPath}:");
+        foreach (var file in files)
+        {
+            Console.WriteLine($"- {Path.GetFileName(file)}");
         }
     }
 }
