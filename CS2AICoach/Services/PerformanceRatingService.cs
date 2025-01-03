@@ -233,7 +233,7 @@ namespace CS2AICoach.Services
 
         private bool IsClutchSituation(List<GameEvent> deathEvents, string playerName)
         {
-            Console.WriteLine($"Checking clutch situation for {playerName}");
+            Logger.Log($"Checking clutch situation for {playerName}");
 
             // Track player states
             var playerStates = new Dictionary<string, (bool IsAlive, int Team)>();
@@ -272,7 +272,7 @@ namespace CS2AICoach.Services
 
             if (!targetPlayerTeam.HasValue || !playerStates.ContainsKey(playerName))
             {
-                Console.WriteLine($"Could not determine team for player {playerName}");
+                Logger.Log($"Could not determine team for player {playerName}");
                 return false;
             }
 
@@ -293,7 +293,7 @@ namespace CS2AICoach.Services
             // Player must be alive for it to be a clutch
             bool playerIsAlive = playerStates[playerName].IsAlive;
 
-            Console.WriteLine($"Clutch check result - Alive teammates: {aliveTeammates}, Enemies: {aliveEnemies}");
+            Logger.Log($"Clutch check result - Alive teammates: {aliveTeammates}, Enemies: {aliveEnemies}");
             return playerIsAlive && aliveTeammates == 0 && aliveEnemies > 0;
         }
 
@@ -367,7 +367,7 @@ namespace CS2AICoach.Services
                 if (relevantFlash != null)
                 {
                     flashAssists++;
-                    Console.WriteLine($"Flash assist found: {relevantFlash.Flasher} flashed {relevantFlash.FlashedPlayer} " +
+                    Logger.Log($"Flash assist found: {relevantFlash.Flasher} flashed {relevantFlash.FlashedPlayer} " +
                                     $"(Duration: {relevantFlash.Duration:F2}s) at tick {relevantFlash.Tick}, " +
                                     $"kill occurred at tick {killTick}");
                 }

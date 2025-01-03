@@ -103,7 +103,7 @@ namespace CS2AICoach.Services
             var team = _playerTeams.GetValueOrDefault(playerName, 0);
 
             var identifier = PlayerIdentifier.Create(steamId, playerName, team, tick);
-            Console.WriteLine($"Created identifier: {identifier}");
+            Logger.Log($"Created identifier: {identifier}");
             return identifier;
         }
 
@@ -146,7 +146,7 @@ namespace CS2AICoach.Services
             string weapon,
             bool headshot)
         {
-            Console.WriteLine($"Updating stats for kill: {killerName} -> {victimName}");
+            Logger.Log($"Updating stats for kill: {killerName} -> {victimName}");
 
             var killerIdentifier = GetPlayerIdentifier(killerId, killerName);
             var victimIdentifier = GetPlayerIdentifier(victimId, victimName);
@@ -161,7 +161,7 @@ namespace CS2AICoach.Services
                     Data = new Dictionary<string, object>()
                 };
                 _playerStats[killerIdentifier] = killerStats;
-                Console.WriteLine($"Created new stats entry for killer: {killerIdentifier}");
+                Logger.Log($"Created new stats entry for killer: {killerIdentifier}");
             }
 
             // Get or create victim stats
@@ -174,7 +174,7 @@ namespace CS2AICoach.Services
                     Data = new Dictionary<string, object>()
                 };
                 _playerStats[victimIdentifier] = victimStats;
-                Console.WriteLine($"Created new stats entry for victim: {victimIdentifier}");
+                Logger.Log($"Created new stats entry for victim: {victimIdentifier}");
             }
 
             // Update stats
@@ -252,10 +252,10 @@ namespace CS2AICoach.Services
                 }
 
                 // Add logging to track the stats we're processing
-                Console.WriteLine($"Total player stats entries: {_playerStats.Count}");
+                Logger.Log($"Total player stats entries: {_playerStats.Count}");
                 foreach (var kvp in _playerStats)
                 {
-                    Console.WriteLine($"Player: {kvp.Key.Name}, SteamID: {kvp.Key.SteamID}, Team: {kvp.Key.Team}, Tick: {kvp.Key.Tick}, Sequence: {kvp.Key.SequenceNumber}");
+                    Logger.Log($"Player: {kvp.Key.Name}, SteamID: {kvp.Key.SteamID}, Team: {kvp.Key.Team}, Tick: {kvp.Key.Tick}, Sequence: {kvp.Key.SequenceNumber}");
                 }
 
                 // Group stats by SteamID first
@@ -269,7 +269,7 @@ namespace CS2AICoach.Services
                               .ToList()
                     );
 
-                Console.WriteLine($"Number of unique SteamIDs: {steamIdGroups.Count}");
+                Logger.Log($"Number of unique SteamIDs: {steamIdGroups.Count}");
 
                 // Create intermediate dictionary to store merged stats
                 var mergedStats = new Dictionary<string, PlayerStats>();
@@ -277,7 +277,7 @@ namespace CS2AICoach.Services
                 foreach (var group in steamIdGroups)
                 {
                     var steamId = group.Key.ToString();
-                    Console.WriteLine($"Processing group for SteamID {steamId} with {group.Value.Count} entries");
+                    Logger.Log($"Processing group for SteamID {steamId} with {group.Value.Count} entries");
 
                     // Skip empty groups
                     if (!group.Value.Any()) continue;
@@ -289,11 +289,11 @@ namespace CS2AICoach.Services
                     if (!mergedStats.ContainsKey(steamId))
                     {
                         mergedStats[steamId] = mergedPlayerStats;
-                        Console.WriteLine($"Added merged stats for {mergedPlayerStats.Name} (SteamID: {steamId})");
+                        Logger.Log($"Added merged stats for {mergedPlayerStats.Name} (SteamID: {steamId})");
                     }
                     else
                     {
-                        Console.WriteLine($"WARNING: Duplicate SteamID found: {steamId}");
+                        Logger.Log($"WARNING: Duplicate SteamID found: {steamId}");
                     }
                 }
 
@@ -302,8 +302,8 @@ namespace CS2AICoach.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Detailed error in ParseDemo: {ex.Message}");
-                Console.WriteLine($"Stack trace: {ex.StackTrace}");
+                Logger.Log($"Detailed error in ParseDemo: {ex.Message}");
+                Logger.Log($"Stack trace: {ex.StackTrace}");
                 throw;
             }
             finally
@@ -336,10 +336,10 @@ namespace CS2AICoach.Services
                 WeaponUsage = new List<WeaponStats>()
             };
 
-            Console.WriteLine($"Merged stats for SteamID {lastStats.SteamId}:");
-            Console.WriteLine($"  - Name: {mergedStats.Name}");
-            Console.WriteLine($"  - Total Kills: {mergedStats.Kills}");
-            Console.WriteLine($"  - Total Deaths: {mergedStats.Deaths}");
+            Logger.Log($"Merged stats for SteamID {lastStats.SteamId}:");
+            Logger.Log($"  - Name: {mergedStats.Name}");
+            Logger.Log($"  - Total Kills: {mergedStats.Kills}");
+            Logger.Log($"  - Total Deaths: {mergedStats.Deaths}");
 
             // Merge weapon usage stats
             var weaponGroups = statsToMerge
@@ -390,7 +390,7 @@ namespace CS2AICoach.Services
         {
             if (type == "PlayerFlashed")
             {
-                Console.WriteLine($"Adding PlayerFlashed event -- Tick: {_demo.CurrentDemoTick.Value}");
+                Logger.Log($"Adding PlayerFlashed event -- Tick: {_demo.CurrentDemoTick.Value}");
             }
 
             var gameEvent = GameEvent.Create(
@@ -399,7 +399,7 @@ namespace CS2AICoach.Services
                 data
             );
 
-            Console.WriteLine($"Created event: {gameEvent}");
+            Logger.Log($"Created event: {gameEvent}");
             _matchData.Events.Add(gameEvent);
         }
 
@@ -474,14 +474,8 @@ namespace CS2AICoach.Services
 
         private void OnPlayerTeam(Source1PlayerTeamEvent e)
         {
-            // Add null check and logging
-            if (e.Player?.PlayerName == null)
-            {
-                Console.WriteLine($"Received player team event with null player or name");
-                return;
-            }
+            if (e.Player?.PlayerName == null) return;
             _playerTeams[e.Player.PlayerName] = e.Team;
-            Console.WriteLine($"Player {e.Player.PlayerName} assigned to team {e.Team}");
         }
 
         private int DeterminePlayerTeam(IEnumerable<GameEvent> events, string playerName)
@@ -822,10 +816,10 @@ namespace CS2AICoach.Services
         private void OnRoundStart(Source1RoundStartEvent e)
         {
             // Add debug logging
-            Console.WriteLine("Round Start - Current Players:");
+            Logger.Log("Round Start - Current Players:");
             foreach (var (playerName, team) in _playerTeams)
             {
-                Console.WriteLine($"- {playerName}: Team {team}");
+                Logger.Log($"- {playerName}: Team {team}");
             }
             // Reset tracking collections
             _flashedPlayers.Clear();
