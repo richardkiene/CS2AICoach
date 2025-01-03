@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using CS2AICoach.Models;
 
 namespace CS2AICoach.Services
@@ -14,7 +15,10 @@ namespace CS2AICoach.Services
             _trainingDataPath = trainingDataPath;
             _jsonOptions = new JsonSerializerOptions
             {
-                WriteIndented = true
+                WriteIndented = true,
+                ReferenceHandler = ReferenceHandler.Preserve,  // Handle circular references
+                MaxDepth = 128,  // Increase max depth
+                Converters = { new GameEventConverter() }
             };
             _ratingService = new PerformanceRatingService();
 
@@ -26,30 +30,120 @@ namespace CS2AICoach.Services
 
         public async Task SaveMatchDataAsync(MatchData matchData, string playerName)
         {
-            var player = matchData.PlayerStats.Values
-                .FirstOrDefault(p => p.Name.Equals(playerName, StringComparison.OrdinalIgnoreCase));
-
-            if (player == null)
+            try
             {
-                throw new ArgumentException($"Player {playerName} not found in match data");
+                var player = matchData.PlayerStats.Values
+                    .FirstOrDefault(p => p.Name.Equals(playerName, StringComparison.OrdinalIgnoreCase));
+
+                if (player == null)
+                {
+                    Console.WriteLine($"Warning: Player {playerName} not found in match data");
+                    Console.WriteLine("Available players:");
+                    foreach (var p in matchData.PlayerStats.Values)
+                    {
+                        Console.WriteLine($"- {p.Name}");
+                    }
+                    throw new ArgumentException($"Player {playerName} not found in match data");
+                }
+
+                Console.WriteLine($"Found player {player.Name} with {player.Kills} kills and {player.Deaths} deaths");
+
+                // Create clean versions of all data structures without circular references
+                var cleanMatchData = new MatchData
+                {
+                    MapName = matchData.MapName,
+                    TickRate = matchData.TickRate,
+                    Events = matchData.Events.Select(e => CleanGameEvent(e)).ToList(),
+                    PlayerStats = new Dictionary<string, PlayerStats>()
+                };
+
+                // Deep copy player stats
+                foreach (var kvp in matchData.PlayerStats)
+                {
+                    cleanMatchData.PlayerStats[kvp.Key] = CleanPlayerStats(kvp.Value);
+                }
+
+                var performanceScore = _ratingService.CalculatePerformanceScore(matchData, player);
+                var metrics = _ratingService.GetDetailedMetrics(matchData, player);
+                var timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss");
+                var filename = Path.Combine(_trainingDataPath, $"match_{timestamp}.json");
+
+                var trainingMatch = new TrainingMatch
+                {
+                    MatchData = cleanMatchData,
+                    PlayerName = playerName,
+                    PerformanceRating = performanceScore,
+                    DetailedMetrics = metrics,
+                    Timestamp = DateTime.UtcNow
+                };
+
+                var json = JsonSerializer.Serialize(trainingMatch, _jsonOptions);
+                await File.WriteAllTextAsync(filename, json);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving match data: {ex.Message}");
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                }
+                throw;
+            }
+        }
+
+        private GameEvent CleanGameEvent(GameEvent original)
+        {
+            // Create a clean copy of the data dictionary
+            var cleanData = new Dictionary<string, object>();
+            foreach (var kvp in original.Data)
+            {
+                // Only copy primitive types and strings
+                if (IsPrimitiveOrString(kvp.Value))
+                {
+                    cleanData[kvp.Key] = kvp.Value;
+                }
+                else
+                {
+                    // For complex objects, convert to string representation
+                    cleanData[kvp.Key] = kvp.Value?.ToString() ?? "";
+                }
             }
 
-            var performanceScore = _ratingService.CalculatePerformanceScore(matchData, player);
-            var metrics = _ratingService.GetDetailedMetrics(matchData, player);
+            // Use the Create factory method to make a new event
+            return GameEvent.Create(
+                original.Type,
+                original.Tick,
+                cleanData
+            );
+        }
 
-            var timestamp = DateTime.UtcNow.ToString("yyyyMMdd_HHmmss");
-            var filename = Path.Combine(_trainingDataPath, $"match_{timestamp}.json");
-
-            var trainingMatch = new TrainingMatch
+        private PlayerStats CleanPlayerStats(PlayerStats original)
+        {
+            return new PlayerStats
             {
-                MatchData = matchData,
-                PlayerName = playerName,
-                PerformanceRating = performanceScore,
-                DetailedMetrics = metrics,
-                Timestamp = DateTime.UtcNow
+                Name = original.Name,
+                SteamId = original.SteamId,
+                Kills = original.Kills,
+                Deaths = original.Deaths,
+                Assists = original.Assists,
+                HeadshotPercentage = original.HeadshotPercentage,
+                WeaponUsage = original.WeaponUsage.Select(w => new WeaponStats
+                {
+                    WeaponName = w.WeaponName,
+                    Kills = w.Kills,
+                    TotalShots = w.TotalShots,
+                    Hits = w.Hits
+                }).ToList(),
+                Data = original.Data.Where(kvp => IsPrimitiveOrString(kvp.Value))
+                                .ToDictionary(kvp => kvp.Key, kvp => kvp.Value)
             };
+        }
 
-            await File.WriteAllTextAsync(filename, JsonSerializer.Serialize(trainingMatch, _jsonOptions));
+        private bool IsPrimitiveOrString(object? value)
+        {
+            if (value == null) return true;
+            var type = value.GetType();
+            return type.IsPrimitive || type == typeof(string) || type == typeof(decimal);
         }
 
         public async Task<List<TrainingMatch>> LoadAllTrainingDataAsync()

@@ -201,6 +201,8 @@ class Program
             var trainingService = new TrainingDataService();
             await trainingService.SaveMatchDataAsync(matchData, player.Name);
 
+            Console.WriteLine("are we here");
+
             var ratingService = new PerformanceRatingService();
             var metrics = ratingService.GetDetailedMetrics(matchData, player);
             var score = ratingService.CalculatePerformanceScore(matchData, player);
