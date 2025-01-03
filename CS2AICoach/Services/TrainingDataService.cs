@@ -100,7 +100,7 @@ namespace CS2AICoach.Services
                 // Only copy primitive types and strings
                 if (IsPrimitiveOrString(kvp.Value))
                 {
-                    cleanData[kvp.Key] = kvp.Value;
+                    cleanData[kvp.Key] = kvp.Value ?? "";
                 }
                 else
                 {
